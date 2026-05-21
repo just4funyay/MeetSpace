@@ -1,16 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Auth\RegisterController;
+use App\Http\Controllers\Auth\LoginController;
 
 Route::get('/', function () {
-    return view('pages.auth.login');
-})->name('login');
-
-Route::get('/register', function() {
-    return view('pages.auth.register');
-})->name('register');
-
-Route::post('/register', function () {
-    // Handle registration logic here
-    return redirect('register');
+    return view('welcome');
 });
+
+Route::get('/login', [LoginController::class, 'create'])->name('login');
+
+// Register routes
+Route::get('/register', [RegisterController::class, 'create'])->name('register');
+Route::post('/register', [RegisterController::class, 'store'])->name('register.store');

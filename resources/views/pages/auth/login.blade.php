@@ -73,7 +73,7 @@
             {{-- Button --}}
             <button
                 type="submit"
-                class="w-full rounded-xl bg-blue-600 px-4 py-3 font-medium text-white transition hover:bg-blue-700"
+                class="w-full rounded-xl bg-blue-600 px-4 py-3 font-medium text-white transition hover:bg-blue-700 cursor-pointer"
             >
                 Login
             </button>

@@ -91,20 +91,6 @@
                 @enderror
             </div>
 
-            {{-- Confirm Password --}}
-            <div>
-                <label class="mb-1 block text-sm font-medium text-gray-700">
-                    Confirm Password
-                </label>
-
-                <input
-                    type="password"
-                    name="password_confirmation"
-                    class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-blue-500 focus:ring-blue-500"
-                    placeholder="Confirm password"
-                >
-            </div>
-
             {{-- Button --}}
             <button
                 type="submit"

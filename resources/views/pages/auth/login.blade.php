@@ -20,21 +20,21 @@
         <form method="POST" action="{{ route('login') }}" class="space-y-4">
             @csrf
 
-            {{-- Email --}}
+            {{-- Username --}}
             <div>
                 <label class="mb-1 block text-sm font-medium text-gray-700">
-                    Email
+                    Username
                 </label>
 
                 <input
-                    type="email"
-                    name="email"
-                    value="{{ old('email') }}"
+                    type="text"
+                    name="username"
                     class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-blue-500 focus:ring-blue-500"
-                    placeholder="Enter your email"
+                    placeholder="Enter your username"
+                    value="{{ old('username') }}"
                 >
 
-                @error('email')
+                @error('username')
                     <p class="mt-1 text-sm text-red-500">{{ $message }}</p>
                 @enderror
             </div>

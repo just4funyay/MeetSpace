@@ -39,6 +39,21 @@
                 @enderror
             </div>
 
+            {{-- Username --}}
+            <div>
+                <label class="mb-1 block text-sm font-medium text-gray-700">
+                    Username
+                </label>
+
+                <input
+                    type="text"
+                    name="username"
+                    class="w-full rounded-xl border border-gray-300 px-4 py-3 focus:border-blue-500 focus:ring-blue-500"
+                    placeholder="Enter your username"
+                    value="{{ old('username') }}"
+                >
+            </div>
+
             {{-- Email --}}
             <div>
                 <label class="mb-1 block text-sm font-medium text-gray-700">
